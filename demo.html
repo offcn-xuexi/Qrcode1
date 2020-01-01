@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生成二维码</title>
+    <script src="js/qrious.min.js"></script>
+
+
+</head>
+<body>
+   <img src="" id="code">
+    <script>
+        var qr = new QRious({
+            element:document.getElementById('code'),
+            size:250,
+            level:'H',
+            value:'http://www.ujiuye.com'
+        });
+    </script>
+</body>
+</html>
